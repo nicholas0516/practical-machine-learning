@@ -1,0 +1,125 @@
+---
+title: "Machine Learning Project Week 4"
+author: "Nicolas Castro"
+date: "23-08-2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(caret)
+```
+
+## Introduction
+
+For this project i decide this order: processing the data, Removing NA values, cross validation, Models, evaluate the model and Predicting using test data. This is a machine learning model to predict how well someone preforms a weight lifting exercise. Movements are tracked through accelerometers in wearable devices (such as a Jawbone Up, Nike FuelBand, and Fitbit). A study was conducted where data was collected and classified measurements taken when someone performs the exercise properly (Class A) as well as when the exercise is done with common mistakes (Classes B to E). 
+
+
+# Data info
+
+- The data and its description is available from <http://groupware.les.inf.puc-rio.br/har>. 
+-For this assignment, the data is downloaded and stored locally in two files. The file, pml-training.csv is for training the model. The file, pml-ttesting.csv is data to be classified (predicted) by the model. 
+
+## Processing the data
+
+```{r}
+#reading Test and train data
+
+library(caret)
+library(ggplot2)
+
+training <- read.csv(file = "pml-training.csv", na.strings = c("NA","#DIV/0!"))
+testing <- read.csv(file = "pml-testing.csv", na.strings = c("NA","#DIV/0!"))
+
+
+```
+
+### Removing NA values
+
+```{r}
+
+#removing variable with more than 60% NA values
+na.sum <-colSums(is.na(training))
+na.names <- names(na.sum)[na.sum/nrow(training) >.6]
+training <- training[,setdiff(colnames(training), na.names)]
+
+#removing variable that are not useful for building model
+ training <- training[,-c(1:7)]
+
+```
+
+
+###  Cross Validation
+
+The 10-fold cross validation is applied using trainControl(), and training data set is split into training(75%) and validation set (25%) using createDatapartition()
+
+
+### Out-of-sample error rate 
+
+
+```{r}
+
+set.seed(1234)
+intrain <- createDataPartition(training$classe, p=.75, list = FALSE)
+
+my_train <- training[intrain,]
+my_test <- training[-intrain,]
+tcontrol <- trainControl(method = "cv", number = 10, preProcOptions = "pca", verboseIter = FALSE, allowParallel = TRUE)
+
+
+```
+
+## Models 
+
+### Random Forest library 
+
+```{r}
+library(rpart)
+library(randomForest)
+
+suppressPackageStartupMessages(model1 <- train(y=my_train[,53], x=my_train[,-53] , method="rf",trControl = tcontrol))
+rf <- model1
+
+```
+
+```{r}
+# validation set is used to generate confusion matrix
+pred <- predict(model1, my_test , data=my_test)
+confusionMatrix(pred, my_test$classe)
+```
+
+####performance of random forest
+
+- Validation: set resulted in Accuracy of .9931 and kappa value of 0.9912
+
+### Boosted Tree
+
+```{r, message= FALSE}
+
+garbage <- capture.output(gbm <- train(y=my_train[,53], x=my_train[,-53] , method="gbm",trControl = tcontrol))
+```
+
+```{r}
+# validation set is used to generate confusion matrix
+gbm.pred <- predict(gbm, my_test)
+confusionMatrix(gbm.pred , my_test$classe)
+
+```
+
+#### results boosted tree
+
+- Applying Validation data set resulted in accuracy value of 0.9659 and kappa value of .9659
+
+
+### Predicting using test data
+
+Random forest is the best model for a better performing and is used to predict the outcome of test data.
+
+```{r}
+
+pred.test <- predict(rf, testing)
+pred.test
+
+```
+
