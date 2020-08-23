@@ -1,0 +1,633 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Practical_Machine_learning_project</TITLE>
+<META name="generator" content="BCL easyConverter SDK 5.0.210">
+<STYLE type="text/css">
+
+body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 35px 0px 12px 50px;padding: 0px;border: none;width: 743px;}
+#page_1 #id1_1 {border:none;margin: 0px 0px 0px 1px;padding: 0px;border:none;width: 742px;overflow: hidden;}
+#page_1 #id1_2 {border:none;margin: 42px 0px 0px 210px;padding: 0px;border:none;width: 533px;overflow: hidden;}
+
+#page_1 #p1dimg1 {position:absolute;top:373px;left:0px;z-index:-1;width:693px;height:655px;}
+#page_1 #p1dimg1 #p1img1 {width:693px;height:655px;}
+
+
+
+
+#page_2 {position:relative; overflow: hidden;margin: 48px 0px 12px 0px;padding: 0px;border: none;width: 793px;}
+
+#page_2 #p2dimg1 {position:absolute;top:73px;left:50px;z-index:-1;width:693px;height:122px;}
+#page_2 #p2dimg1 #p2img1 {width:693px;height:122px;}
+
+
+
+
+#page_3 {position:relative; overflow: hidden;margin: 38px 0px 12px 50px;padding: 0px;border: none;width: 743px;}
+#page_3 #id3_1 {border:none;margin: 6px 0px 0px 1px;padding: 0px;border:none;width: 742px;overflow: hidden;}
+#page_3 #id3_2 {border:none;margin: 147px 0px 0px 210px;padding: 0px;border:none;width: 533px;overflow: hidden;}
+
+#page_3 #p3dimg1 {position:absolute;top:0px;left:0px;z-index:-1;width:693px;height:921px;}
+#page_3 #p3dimg1 #p3img1 {width:693px;height:921px;}
+
+
+
+
+#page_4 {position:relative; overflow: hidden;margin: 38px 0px 12px 50px;padding: 0px;border: none;width: 743px;}
+#page_4 #id4_1 {border:none;margin: 6px 0px 0px 1px;padding: 0px;border:none;width: 742px;overflow: hidden;}
+#page_4 #id4_2 {border:none;margin: 394px 0px 0px 210px;padding: 0px;border:none;width: 533px;overflow: hidden;}
+
+#page_4 #p4dimg1 {position:absolute;top:0px;left:0px;z-index:-1;width:693px;height:676px;}
+#page_4 #p4dimg1 #p4img1 {width:693px;height:676px;}
+
+
+
+
+.dclr {clear:both;float:none;height:1px;margin:0px;padding:0px;overflow:hidden;}
+
+.ft0{font: 31px 'Arial';color: #333333;line-height: 35px;}
+.ft1{font: italic 15px 'Arial';color: #333333;line-height: 20px;}
+.ft2{font: 24px 'Arial';color: #333333;line-height: 27px;}
+.ft3{font: 15px 'Arial';color: #333333;line-height: 17px;}
+.ft4{font: 11px 'Arial';color: #333333;line-height: 13px;}
+.ft5{font: 11px 'Arial';color: #333333;line-height: 14px;}
+.ft6{font: italic 11px 'Courier New';color: #999988;line-height: 15px;}
+.ft7{font: 11px 'Courier New';color: #687687;line-height: 14px;}
+.ft8{font: 11px 'Courier New';line-height: 14px;}
+.ft9{font: bold 11px 'Courier New';color: #990000;line-height: 14px;}
+.ft10{font: 10px 'Courier New';color: #333333;line-height: 12px;}
+.ft11{font: 11px 'Courier New';color: #333333;margin-left: 6px;line-height: 14px;}
+.ft12{font: 11px 'Courier New';color: #333333;line-height: 14px;}
+.ft13{font: 10px 'Courier New';color: #687687;line-height: 14px;}
+.ft14{font: 10px 'Courier New';color: #dd1144;line-height: 14px;}
+.ft15{font: 10px 'Courier New';color: #333333;line-height: 14px;}
+.ft16{font: 10px 'Courier New';line-height: 14px;}
+.ft17{font: 19px 'Arial';color: #333333;line-height: 22px;}
+.ft18{font: 9px 'Courier New';color: #687687;line-height: 12px;}
+.ft19{font: 9px 'Courier New';color: #009999;line-height: 12px;}
+.ft20{font: 9px 'Courier New';line-height: 12px;}
+.ft21{font: 9px 'Courier New';color: #333333;line-height: 12px;}
+.ft22{font: 11px 'Courier New';color: #009999;line-height: 14px;}
+.ft23{font: 11px 'Courier New';color: #990073;line-height: 14px;}
+.ft24{font: 11px 'Courier New';color: #dd1144;line-height: 14px;}
+.ft25{font: 8px 'Calibri';color: #ffffff;line-height: 10px;}
+.ft26{font: bold 10px 'Courier New';color: #990000;line-height: 16px;}
+.ft27{font: 10px 'Courier New';color: #687687;line-height: 15px;}
+.ft28{font: 10px 'Courier New';line-height: 15px;}
+.ft29{font: 9px 'Courier New';color: #333333;margin-left: 6px;line-height: 12px;}
+.ft30{font: 11px 'Courier New';color: #333333;margin-left: 30px;line-height: 14px;}
+.ft31{font: 9px 'Courier New';color: #dd1144;line-height: 12px;}
+.ft32{font: 10px 'Courier New';color: #687687;line-height: 13px;}
+.ft33{font: 10px 'Courier New';line-height: 13px;}
+.ft34{font: 11px 'Courier New';color: #999988;line-height: 14px;}
+.ft35{font: italic 10px 'Courier New';color: #999988;margin-left: 7px;line-height: 15px;}
+.ft36{font: 10px 'Courier New';color: #333333;line-height: 15px;}
+.ft37{font: italic 10px 'Courier New';color: #999988;line-height: 15px;}
+.ft38{font: 11px 'Courier New';color: #333333;margin-left: 68px;line-height: 14px;}
+.ft39{font: 11px 'Courier New';color: #333333;line-height: 12px;}
+.ft40{font: 11px 'Courier New';color: #333333;line-height: 13px;}
+.ft41{font: 1px 'Courier New';line-height: 1px;}
+.ft42{font: 11px 'Courier New';color: #333333;margin-left: 96px;line-height: 14px;}
+.ft43{font: 11px 'Courier New';color: #333333;margin-left: 12px;line-height: 14px;}
+
+.p0{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: left;padding-right: 642px;margin-top: 8px;margin-bottom: 0px;}
+.p2{text-align: left;margin-top: 13px;margin-bottom: 0px;}
+.p3{text-align: left;padding-right: 66px;margin-top: 0px;margin-bottom: 0px;}
+.p4{text-align: left;margin-top: 17px;margin-bottom: 0px;}
+.p5{text-align: left;padding-right: 76px;margin-top: 0px;margin-bottom: 0px;}
+.p6{text-align: left;margin-top: 26px;margin-bottom: 0px;}
+.p7{text-align: left;padding-left: 8px;margin-top: 17px;margin-bottom: 0px;}
+.p8{text-align: left;padding-left: 8px;margin-top: 12px;margin-bottom: 0px;}
+.p9{text-align: left;padding-left: 7px;margin-top: 26px;margin-bottom: 0px;}
+.p10{text-align: left;padding-left: 7px;margin-top: 25px;margin-bottom: 0px;}
+.p11{text-align: left;padding-left: 8px;margin-top: 22px;margin-bottom: 0px;}
+.p12{text-align: left;padding-left: 8px;padding-right: 249px;margin-top: 17px;margin-bottom: 0px;}
+.p13{text-align: left;margin-top: 23px;margin-bottom: 0px;}
+.p14{text-align: left;padding-left: 8px;padding-right: 433px;margin-top: 16px;margin-bottom: 0px;}
+.p15{text-align: left;padding-left: 8px;margin-top: 1px;margin-bottom: 0px;}
+.p16{text-align: left;padding-left: 8px;margin-top: 8px;margin-bottom: 0px;}
+.p17{text-align: left;padding-left: 7px;margin-top: 10px;margin-bottom: 0px;}
+.p18{text-align: left;padding-left: 13px;margin-top: 4px;margin-bottom: 0px;}
+.p19{text-align: left;padding-right: 62px;margin-top: 0px;margin-bottom: 0px;}
+.p20{text-align: left;margin-top: 8px;margin-bottom: 0px;}
+.p21{text-align: left;padding-left: 32px;margin-top: 10px;margin-bottom: 0px;}
+.p22{text-align: left;padding-left: 32px;margin-top: 2px;margin-bottom: 0px;}
+.p23{text-align: left;padding-left: 8px;margin-top: 2px;margin-bottom: 0px;}
+.p24{text-align: left;padding-left: 8px;padding-right: 537px;margin-top: 13px;margin-bottom: 0px;}
+.p25{text-align: left;padding-left: 8px;margin-top: 4px;margin-bottom: 0px;}
+.p26{text-align: left;padding-left: 51px;margin-top: 0px;margin-bottom: 0px;}
+.p27{text-align: left;padding-left: 51px;margin-top: 15px;margin-bottom: 0px;}
+.p28{text-align: left;padding-left: 59px;padding-right: 595px;margin-top: 14px;margin-bottom: 0px;}
+.p29{text-align: left;padding-left: 59px;margin-top: 23px;margin-bottom: 0px;}
+.p30{text-align: left;padding-left: 59px;margin-top: 26px;margin-bottom: 0px;}
+.p31{text-align: right;padding-right: 260px;margin-top: 868px;margin-bottom: 0px;}
+.p32{text-align: left;padding-left: 8px;margin-top: 0px;margin-bottom: 0px;}
+.p33{text-align: left;padding-left: 7px;margin-top: 3px;margin-bottom: 0px;}
+.p34{text-align: left;padding-left: 7px;margin-top: 22px;margin-bottom: 0px;}
+.p35{text-align: left;margin-top: 2px;margin-bottom: 0px;}
+.p36{text-align: left;padding-left: 7px;margin-top: 1px;margin-bottom: 0px;}
+.p37{text-align: left;padding-left: 8px;padding-right: 652px;margin-top: 4px;margin-bottom: 0px;}
+.p38{text-align: left;padding-left: 8px;padding-right: 403px;margin-top: 26px;margin-bottom: 0px;text-indent: -1px;}
+.p39{text-align: left;padding-left: 7px;margin-top: 20px;margin-bottom: 0px;}
+.p40{text-align: left;padding-left: 7px;margin-top: 0px;margin-bottom: 0px;}
+.p41{text-align: left;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p42{text-align: left;padding-left: 11px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p43{text-align: right;padding-right: 6px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p44{text-align: right;padding-right: 7px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p45{text-align: right;padding-right: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p46{text-align: right;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p47{text-align: left;padding-left: 31px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p48{text-align: left;margin-top: 1px;margin-bottom: 0px;}
+.p49{text-align: left;padding-left: 14px;margin-top: 1px;margin-bottom: 0px;}
+.p50{text-align: right;padding-right: 54px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p51{text-align: left;padding-left: 54px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p52{text-align: right;padding-right: 58px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p53{text-align: left;padding-left: 58px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p54{text-align: right;padding-right: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p55{text-align: left;margin-top: 10px;margin-bottom: 0px;}
+.p56{text-align: left;padding-left: 32px;margin-top: 9px;margin-bottom: 0px;}
+.p57{text-align: left;margin-top: 15px;margin-bottom: 0px;}
+.p58{text-align: left;padding-left: 8px;margin-top: 16px;margin-bottom: 0px;}
+.p59{text-align: left;padding-left: 8px;margin-top: 6px;margin-bottom: 0px;}
+.p60{text-align: left;padding-left: 8px;padding-right: 435px;margin-top: 19px;margin-bottom: 0px;text-indent: -1px;}
+.p61{text-align: left;margin-top: 3px;margin-bottom: 0px;}
+.p62{text-align: left;padding-left: 14px;margin-top: 0px;margin-bottom: 0px;}
+.p63{text-align: left;padding-left: 7px;margin-top: 2px;margin-bottom: 0px;}
+.p64{text-align: left;margin-top: 11px;margin-bottom: 0px;}
+.p65{text-align: left;margin-top: 14px;margin-bottom: 0px;}
+.p66{text-align: left;padding-left: 32px;margin-top: 11px;margin-bottom: 0px;}
+.p67{text-align: left;padding-left: 8px;padding-right: 523px;margin-top: 16px;margin-bottom: 0px;}
+.p68{text-align: left;padding-left: 7px;margin-top: 24px;margin-bottom: 0px;}
+
+.td0{padding: 0px;margin: 0px;width: 94px;vertical-align: bottom;}
+.td1{padding: 0px;margin: 0px;width: 27px;vertical-align: bottom;}
+.td2{padding: 0px;margin: 0px;width: 32px;vertical-align: bottom;}
+.td3{padding: 0px;margin: 0px;width: 28px;vertical-align: bottom;}
+.td4{padding: 0px;margin: 0px;width: 23px;vertical-align: bottom;}
+.td5{padding: 0px;margin: 0px;width: 43px;vertical-align: bottom;}
+.td6{padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
+.td7{padding: 0px;margin: 0px;width: 51px;vertical-align: bottom;}
+.td8{padding: 0px;margin: 0px;width: 65px;vertical-align: bottom;}
+.td9{padding: 0px;margin: 0px;width: 200px;vertical-align: bottom;}
+.td10{padding: 0px;margin: 0px;width: 71px;vertical-align: bottom;}
+.td11{padding: 0px;margin: 0px;width: 141px;vertical-align: bottom;}
+.td12{padding: 0px;margin: 0px;width: 148px;vertical-align: bottom;}
+.td13{padding: 0px;margin: 0px;width: 55px;vertical-align: bottom;}
+.td14{padding: 0px;margin: 0px;width: 57px;vertical-align: bottom;}
+.td15{padding: 0px;margin: 0px;width: 56px;vertical-align: bottom;}
+.td16{padding: 0px;margin: 0px;width: 276px;vertical-align: bottom;}
+.td17{padding: 0px;margin: 0px;width: 93px;vertical-align: bottom;}
+.td18{padding: 0px;margin: 0px;width: 30px;vertical-align: bottom;}
+.td19{padding: 0px;margin: 0px;width: 80px;vertical-align: bottom;}
+.td20{padding: 0px;margin: 0px;width: 50px;vertical-align: bottom;}
+.td21{padding: 0px;margin: 0px;width: 207px;vertical-align: bottom;}
+
+.tr0{height: 12px;}
+.tr1{height: 14px;}
+.tr2{height: 15px;}
+.tr3{height: 16px;}
+.tr4{height: 21px;}
+.tr5{height: 20px;}
+
+.t0{width: 236px;margin-left: 8px;font: 11px 'Courier New';color: #333333;}
+.t1{width: 265px;margin-left: 14px;margin-top: 1px;font: 9px 'Courier New';color: #333333;}
+.t2{width: 212px;margin-left: 8px;font: 10px 'Courier New';color: #333333;}
+.t3{width: 424px;margin-left: 8px;font: 11px 'Courier New';color: #333333;}
+.t4{width: 272px;margin-left: 14px;margin-top: 3px;font: 9px 'Courier New';color: #333333;}
+.t5{width: 219px;margin-left: 8px;margin-top: 1px;font: 10px 'Courier New';color: #333333;}
+
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="page_1">
+<DIV id="p1dimg1">
+<IMG src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAKPArUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2+23G2iJkkJKgklz3qXB/vP8A99mo7b/j0h/3F/lUtACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFACYP95/++zRg/3n/wC+zS0UAJg/3n/77NGD/ef/AL7NLRQAmD/ef/vs0YP95/8Avs0tFADGj3Y/eSDHpIRRT6KAIrb/AI9If9xf5VLUVt/x6Q/7i/yqWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAitv+PSH/AHF/lUtRW3/HpD/uL/KpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCK2/49If9xf5VLT4bVIYhGGdgP7xFP8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0VN5K+po8lfU0AQ0Uslmshz5si+ykf4UUAOtpnngSRowm4ZC7s1N83oKgsx/oVv8A9c1/lVigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigBPm9BR83oKWigCtPNcRsBHCrgjn5sYoqxge/wCdFAENn/x5W/8A1zX+VT1Xs/8Ajyt+P+Wa/wAqsUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFIWA+8QPqaKAEjjWKMIgwoGAM5p1VrdrmW3jkZ4gXUNgIT1/GpNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgCWiots//PSP/v2f8aNs/wDz0j/79n/GgBJ7SG52+apbb0wxH8qKbILwY8t4D67kI/rRQA6z/wCPK3/65r/Kpqhs/wDjyt/+ua/yqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooArWUiGxgw68Rgdfap96f3l/Oqn9jaX/0DbP/AL8L/hR/Y2l/9A2z/wC/C/4UAW96f3l/Ojen95fzqp/Y2l/9A2z/AO/C/wCFH9jaX/0DbP8A78L/AIUAW96f3l/Ojen95fzqp/Y2l/8AQNs/+/C/4Uf2Npf/AEDbP/vwv+FAFven95fzo3p/eX86qf2Npf8A0DbP/vwv+FH9jaX/ANA2z/78L/hQBb3p/eX86N6f3l/Oqn9jaX/0DbP/AL8L/hR/Y2l/9A2z/wC/C/4UAW96f3l/Ojen95fzqp/Y2l/9A2z/AO/C/wCFH9jaX/0DbP8A78L/AIUAW96f3l/Ojen95fzqp/Y2l/8AQNs/+/C/4Uf2Npf/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w/Ojcv8AeH51W4o4oAs7l/vD86Ny/wB4fnVbijigCzuX+8Pzo3L/AHh+dVuKOKALO5f7w/Ojcv8AeH51W4o4oAs7l/vD86Ny/wB4fnVbijigCzuX+8Pzo3L/AHh+dVuKOKALO5f7w/Ojcv8AeH51W4o4oAs7l/vD86Ny/wB4fnVbijigCzuX+8Pzo3L/AHh+dVuKOKALO5f7w/Ojcv8AeH51W4o4oAs7l/vD86Ny/wB4fnVbijigCzuX+8Pzo3L/AHh+dVuKOKALO5f7w/Ojcv8AeH51W4o4oAs7l/vD86Ny/wB4fnVbijigCzuX+8Pzo3L/AHh+dVuKOKAJmniQ4aVB9WoqBkV/vqGx0ooAjtv+PSH/AHF/lUtRW3/HpD/uL/KpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCK2/49If9xf5VLUVt/wAekP8AuL/KpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCK2/49If9xf5VLUVt/x6Q/7i/wAqloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIrb/AI9If9xf5VLUVt/x6Q/7i/yqWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAitv+PSH/AHF/lUtRW3/HpD/uL/KpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCK2/49If9xf5VLUVt/wAekP8AuL/KpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCK2/49If9xf5VLSQ2HkxqguZmCjA3Bf/AImn/ZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbRTvsp/57yfkv+FH2U/895PyX/CgBtFO+yn/AJ7yfkv+FH2U/wDPeT8l/wAKAG0U77Kf+e8n5L/hR9lP/PeT8l/woAbRTvsp/wCe8n5L/hR9lP8Az3k/Jf8ACgBtFO+yn/nvJ+S/4UfZT/z3k/Jf8KAG0U77Kf8AnvJ+S/4UfZT/AM95PyX/AAoAbmimTacJiCbq4XAx8rD/AAooAu0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFcb4y0PxTqusaNNoGsmwtoZD9oAdhjkHcVHEg+XG09z6EkdlQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFcd4xtfGc+q6S/hi4t4raNybgSsACe28dSmMjC85OfQjsaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAorjvHGleJtRudGl8PXz2yQXH+kqkpXIJXDEZAdVw2Vzznoa7HtzQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUVQhnupYUkLQruGcBCf61J5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VU8y6/wCekP8A37P/AMVR5l1/z0h/79n/AOKoAt0VReW9GNjW7eu5WH9TRQAlt/x6Q/7i/wAqlqK2/wCPSH/cX+VS0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEVt/x6Q/7i/yqWorb/j0h/wBxf5VLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUARW3/HpD/uL/Kpaitv+PSH/cX+VS0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEVt/wAekP8AuL/Kpaitv+PSH/cX+VS0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEVt/x6Q/7i/wAqlqK2/wCPSH/cX+VS0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEVt/x6Q/7i/yqWorb/j0h/wBxf5VLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUARW3/HpD/uL/KpahtGD2cJU5GwD8uKmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKimuYrfb5r7d3TgmigD/2Q==" id="p1img1"></DIV>
+
+
+<DIV id="id1_1">
+<P class="p0 ft0">Machine Learning Project Week 4</P>
+<P class="p1 ft1">Nicolas Castro <NOBR>23-08-2020</NOBR></P>
+<P class="p2 ft2">Introduction</P>
+<P class="p3 ft3">For this project i decide this order: processing the data, Removing NA values, cross validation, Models, evaluate the model and Predicting using test data. This is a machine learning model to predict how well someone preforms a weight lifting exercise. Movements are tracked through accelerometers in wearable devices (such as a Jawbone Up, Nike FuelBand, and Fitbit). A study was conducted where data was collected and classified measurements taken when someone performs the exercise properly (Class A) as well as when the exercise is done with common mistakes (Classes B to E).</P>
+<P class="p4 ft2">Data Info</P>
+<P class="p0 ft4">The data and its description is available from <NOBR>http://groupware.les.inf.puc-rio.br/har.</NOBR></P>
+<P class="p5 ft5">For this assignment, the data is downloaded and stored locally in two files. The file, <NOBR>pml-training.csv</NOBR> is for training the model. The file, <NOBR>pml-ttesting.csv</NOBR> is data to be classified (predicted) by the model.</P>
+<P class="p6 ft2">Processing the Data</P>
+<P class="p7 ft6">#reading Test and train data</P>
+<P class="p8 ft9">library<SPAN class="ft7">(</SPAN><SPAN class="ft8">caret</SPAN><SPAN class="ft7">)</SPAN></P>
+<P class="p9 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Loading required package: lattice</SPAN></P>
+<P class="p10 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Loading required package: ggplot2</SPAN></P>
+<P class="p11 ft9">library<SPAN class="ft7">(</SPAN><SPAN class="ft8">ggplot2</SPAN><SPAN class="ft7">)</SPAN></P>
+<P class="p12 ft16">training <SPAN class="ft13">&lt;- </SPAN>read.csv<SPAN class="ft13">(</SPAN>file <SPAN class="ft13">= </SPAN><SPAN class="ft14">"training.csv"</SPAN><SPAN class="ft15">, </SPAN>na.strings <SPAN class="ft13">= </SPAN>c<SPAN class="ft13">(</SPAN><SPAN class="ft14">"NA"</SPAN><SPAN class="ft15">,</SPAN><SPAN class="ft14">"#DIV/0!"</SPAN><SPAN class="ft13">)) </SPAN>testing <SPAN class="ft13">&lt;- </SPAN>read.csv<SPAN class="ft13">(</SPAN>file <SPAN class="ft13">= </SPAN><SPAN class="ft14">"testing.csv"</SPAN><SPAN class="ft15">, </SPAN>na.strings <SPAN class="ft13">= </SPAN>c<SPAN class="ft13">(</SPAN><SPAN class="ft14">"NA"</SPAN><SPAN class="ft15">,</SPAN><SPAN class="ft14">"#DIV/0!"</SPAN><SPAN class="ft13">))</SPAN></P>
+<P class="p13 ft17">Removing NA values</P>
+<P class="p14 ft8"><SPAN class="ft6">#removing variable with more than 60% NA values </SPAN>na.sum <NOBR><SPAN class="ft7">&lt;-</SPAN>colSums<SPAN class="ft7">(</SPAN>is.na<SPAN class="ft7">(</SPAN>training<SPAN class="ft7">))</SPAN></NOBR></P>
+<P class="p15 ft20">na.names <SPAN class="ft18">&lt;- </SPAN>names<SPAN class="ft18">(</SPAN>na.sum<SPAN class="ft18">)[</SPAN>na.sum<SPAN class="ft18">/</SPAN>nrow<SPAN class="ft18">(</SPAN>training<SPAN class="ft18">) &gt; </SPAN><SPAN class="ft19">.6</SPAN><SPAN class="ft18">] </SPAN>training <SPAN class="ft18">&lt;-</SPAN></P>
+<P class="p16 ft20">training<SPAN class="ft18">[</SPAN><SPAN class="ft21">,</SPAN>setdiff<SPAN class="ft18">(</SPAN>colnames<SPAN class="ft18">(</SPAN>training<SPAN class="ft18">)</SPAN><SPAN class="ft21">, </SPAN>na.names<SPAN class="ft18">)]</SPAN></P>
+<P class="p17 ft6">#removing variable that are not useful for building</P>
+<P class="p18 ft8"><SPAN class="ft6">model </SPAN>training <SPAN class="ft7">&lt;- </SPAN><NOBR>training<SPAN class="ft7">[</SPAN><SPAN class="ft12">,</SPAN><SPAN class="ft7">-</SPAN>c<SPAN class="ft7">(</SPAN><SPAN class="ft22">1</SPAN><SPAN class="ft7">:</SPAN><SPAN class="ft22">7</SPAN><SPAN class="ft7">)]</SPAN></NOBR></P>
+<P class="p4 ft17">cross validation</P>
+<P class="p19 ft5">The <NOBR>10-fold</NOBR> cross validation is applied using trainControl(), and training data set is split into training(75%) and validation set (25%) using createDatapartition()</P>
+<P class="p20 ft17">Expected <NOBR>Out-of-sample</NOBR> error rate</P>
+<P class="p21 ft5">Expected out of sample error rate corresponds to accuracy in the test data set.</P>
+<P class="p22 ft5">It is the rate of misclassified observation to total observation</P>
+<P class="p22 ft5">Cross validation data set gives good estimate of out of sample error rate in test data</P>
+<P class="p7 ft8">set.seed<SPAN class="ft7">(</SPAN><SPAN class="ft22">1234</SPAN><SPAN class="ft7">)</SPAN></P>
+<P class="p23 ft8">intrain <SPAN class="ft7">&lt;- </SPAN>createDataPartition<SPAN class="ft7">(</SPAN>training<SPAN class="ft7">$</SPAN>classe<SPAN class="ft12">, </SPAN>p<SPAN class="ft7">=</SPAN><SPAN class="ft22">.75</SPAN><SPAN class="ft12">, </SPAN>list <SPAN class="ft7">= </SPAN><SPAN class="ft23">FALSE</SPAN><SPAN class="ft7">)</SPAN></P>
+<P class="p24 ft16">my_train <SPAN class="ft13">&lt;- </SPAN>training<SPAN class="ft13">[</SPAN>intrain<SPAN class="ft15">,</SPAN><SPAN class="ft13">] </SPAN>my_test <SPAN class="ft13">&lt;- </SPAN><NOBR>training<SPAN class="ft13">[-</SPAN>intrain<SPAN class="ft15">,</SPAN><SPAN class="ft13">]</SPAN></NOBR></P>
+<P class="p23 ft8">tcontrol <SPAN class="ft7">&lt;- </SPAN>trainControl<SPAN class="ft7">(</SPAN>method <SPAN class="ft7">= </SPAN><SPAN class="ft24">"cv"</SPAN><SPAN class="ft12">, </SPAN>number <SPAN class="ft7">= </SPAN><SPAN class="ft22">10</SPAN><SPAN class="ft12">, </SPAN>preProcOptions <SPAN class="ft7">= </SPAN><SPAN class="ft24">"pca"</SPAN><SPAN class="ft12">, </SPAN>verboseIter <SPAN class="ft7">= </SPAN><SPAN class="ft23">FALSE</SPAN><SPAN class="ft12">,</SPAN></P>
+<P class="p25 ft8">allowPara llel <SPAN class="ft7">= </SPAN><SPAN class="ft23">TRUE</SPAN><SPAN class="ft7">)</SPAN></P>
+</DIV>
+<DIV id="id1_2">
+</DIV>
+</DIV>
+<DIV id="page_2">
+<DIV id="p2dimg1">
+<IMG src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAB6ArUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2+23G2iJkkJKgklz3qXB/vP8A99Go7b/j0h/3F/lUtACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFACYP95/++jRg/3n/wC+jS0UAJg/3n/76NGD/ef/AL6NLRQAmD/ef/vo0YP95/8Avo0tFADGj3Y/eSDHpIRRT6KAIrb/AI9If9xf5VLUVt/x6Q/7i/yqWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAitv+PSH/AHF/lUtMht7iOGNGERKgDO49vwp/l3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9yL/vs/8AxNABRR5dx/ci/wC+z/8AE0eXcf3Iv++z/wDE0AFFHl3H9yL/AL7P/wATR5dx/ci/77P/AMTQAUUeXcf3Iv8Avs//ABNHl3H9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" id="p2img1"></DIV>
+
+
+<P class="p26 ft2">Models</P>
+<P class="p27 ft17">Random Forest</P>
+<P class="p28 ft28"><SPAN class="ft26">library</SPAN><SPAN class="ft27">(</SPAN>rpart<SPAN class="ft27">) </SPAN><SPAN class="ft26">library</SPAN><SPAN class="ft27">(</SPAN>randomForest<SPAN class="ft27">)</SPAN></P>
+<P class="p29 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">randomForest </SPAN><NOBR>4.6-12</NOBR></P>
+<P class="p30 ft21"><SPAN class="ft21">##</SPAN><SPAN class="ft29">Type rfNews() to see new features/changes/bug fixes.</SPAN></P>
+</DIV>
+<DIV id="page_3">
+<DIV id="p3dimg1">
+<IMG src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAOYArUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3ewjSOxhCLjKAnnvirFQ2f/HlB/1zX+VTUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQzWkFwwaVNxAwOSKKmooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqtFDcwwpGJ4iEUKCYj2/wCBU/bdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKh23X/PaH/v0f/iqNt1/z2h/79H/AOKoAmoqHbdf89of+/R/+Ko23X/PaH/v0f8A4qgCaiodt1/z2h/79H/4qjbdf89of+/R/wDiqAJqKrNFeNjF1Gv+7D/iaKAJYp45oxJGSyHodpp+4e/5GobP/jyg/wCua/yqegBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigBNw9/wAjRuHv+RpaKAE3D3/I0bh7/kaWigBNw9/yNG4e/wCRpaKAE3D3/I0bh7/kaWigCCe8gttvnOV3dPlPNFTEA9QDRQBFZ/8AHlb/APXNf5VNUNn/AMeVv/1zX+VTUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAENn/x5W//AFzX+VTVDZ/8eVv/ANc1/lU1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBDZ/8AHlb/APXNf5VNVewkSSxhKMDhAp9iBVigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoqGe7gtiBNIFJ5A60UAAtLcdLeIf8AFL9lt/wDnhF/3wKq2hYWsZMjsWUMSzEnmptzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dAEn2W3/54Rf98Cj7Lb/88Iv++BUe5v7x/Ojc394/nQBJ9lt/+eEX/fAo+y2//PCL/vgVHub+8fzo3N/eP50ASfZbf/nhF/3wKPstv/zwi/74FR7m/vH86Nzf3j+dADzaWx628R/4AKKrTRGYg+fMmP7j4zRQAW3/AB6Q/wC4v8qlqK2/49If9xf5VLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUARW3/HpD/uL/ACqWorb/AI9If9xf5VLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUARW3/HpD/uL/Kpaitv+PSH/AHF/lUtABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBJFbLFEsYZiFGATjNO8lfU1Xiu5pYlk8lFDDIBc/wDxNP8APm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQBL5K+po8lfU1F583/ADxT/v4f/iaPPm/54p/38P8A8TQATWazbf30yY/uNjNFNa5nGMQIf+2n/wBaigCO2/49IP8AcX+VS1Fbf8ekP+4v8qloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIrb/j0h/3F/lUtRW3/AB6Q/wC4v8qloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIrb/j0h/3F/lUtRW3/HpD/uL/ACqWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAZBFKtvGjREMqgEZHapdj/ANw/mKeLiAjImjI9mFO86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAi2P8A3D+Yo2P/AHD+YqXzov8Anon/AH0KPOi/56J/30KAItj/ANw/mKNj/wBw/mKl86L/AJ6J/wB9Cjzov+eif99CgCLY/wDcP5ijY/8AcP5ipfOi/wCeif8AfQo86L/non/fQoAqyidceXAzevI/xoqybiFesqD6migCKzz9jt8DHyKT+VWOahs/+PK3/wCua/yqegBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBOaOaWigBpRT1Vfyop1FAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBBZ/8AHlb/APXNf5VPUFn/AMeVv/1zX+VT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEFn/x5W//AFzX+VT1BZ/8eVv/ANc1/lU9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBXs/8Ajyg/65r/ACqxWTajWYrdElstPLKMArdv0x/1yqbzdX/58rL/AMDG/wDjVAGhRWf5ur/8+Vl/4GN/8ao83V/+fKy/8DG/+NUAaFFZ/m6v/wA+Vl/4GN/8ao83V/8Anysv/Axv/jVAGhRWf5ur/wDPlZf+Bjf/ABqjzdX/AOfKy/8AAxv/AI1QBoUVn+bq/wDz5WX/AIGN/wDGqPN1f/nysv8AwMb/AONUAaFFZ/m6v/z5WX/gY3/xqjzdX/58rL/wMb/41QBoUVn+bq//AD5WX/gY3/xqjzdX/wCfKy/8DG/+NUAaFFZ/m6v/AM+Vl/4GN/8AGqPN1f8A58rL/wADG/8AjVAGhRWf5ur/APPlZf8AgY3/AMao83V/+fKy/wDAxv8A41QBoUVn+bq//PlZf+Bjf/GqPN1f/nysv/Axv/jVAGhRWf5ur/8APlZf+Bjf/GqPN1f/AJ8rL/wMb/41QBoUVn+bq/8Az5WX/gY3/wAao83V/wDnysv/AAMb/wCNUAaFFZ/m6v8A8+Vl/wCBjf8AxqjzdX/58rL/AMDG/wDjVAGhRWf5ur/8+Vl/4GN/8ao83V/+fKy/8DG/+NUAaFFZ/m6v/wA+Vl/4GN/8ao83V/8Anysv/Axv/jVAGhRWf5ur/wDPlZf+Bjf/ABqjzdX/AOfKy/8AAxv/AI1QBoUVn+bq/wDz5WX/AIGN/wDGqPN1f/nysv8AwMb/AONUAaFFZ/m6v/z5WX/gY3/xqjzdX/58rL/wMb/41QBoUVn+bq//AD5WX/gY3/xqjzdX/wCfKy/8DG/+NUAaFFZ/m6v/AM+Vl/4GN/8AGqPN1f8A58rL/wADG/8AjVAGhRWf5ur/APPlZf8AgY3/AMao83V/+fKy/wDAxv8A41QBoUVn+bq//PlZf+Bjf/GqPN1f/nysv/Axv/jVAGhRWf5ur/8APlZf+Bjf/GqPN1f/AJ8rL/wMb/41QBoUVn+bq/8Az5WX/gY3/wAao83V/wDnysv/AAMb/wCNUAaFFZ/m6v8A8+Vl/wCBjf8AxqjzdX/58rL/AMDG/wDjVAGhRWf5ur/8+Vl/4GN/8ao83V/+fKy/8DG/+NUAaFFZ/m6v/wA+Vl/4GN/8ao83V/8Anysv/Axv/jVAGhRWf5ur/wDPlZf+Bjf/ABqjzdX/AOfKy/8AAxv/AI1QBoUVn+bq/wDz5WX/AIGN/wDGqPN1f/nysv8AwMb/AONUAaFFZ/m6v/z5WX/gY3/xqjzdX/58rL/wMb/41QBoUVn+bq//AD5WX/gY3/xqjzdX/wCfKy/8DG/+NUAaFFZ/m6v/AM+Vl/4GN/8AGqPN1f8A58rL/wADG/8AjVAGhRWf5ur/APPlZf8AgY3/AMao83V/+fKy/wDAxv8A41QBoUVn+bq//PlZf+Bjf/GqPN1f/nysv/Axv/jVAGhRWf5ur/8APlZf+Bjf/GqPN1f/AJ8rL/wMb/41QBoUVn+bq/8Az5WX/gY3/wAao83V/wDnysv/AAMb/wCNUAaFFZ/m6v8A8+Vl/wCBjf8AxqjzdX/58rL/AMDG/wDjVAGhRWf5ur/8+Vl/4GN/8ao83V/+fKy/8DG/+NUAaFFZ/m6v/wA+Vl/4GN/8ao83V/8Anysv/Axv/jVAGhRWf5ur/wDPlZf+Bjf/ABqjzdX/AOfKy/8AAxv/AI1QBoUVn+bq/wDz5WX/AIGN/wDGqPN1f/nysv8AwMb/AONUAaFFZ/m6v/z5WX/gY3/xqjzdX/58rL/wMb/41QBoUVn+bq//AD5WX/gY3/xqjzdX/wCfKy/8DG/+NUAaGRRWTO+vlh5NrpwGOd12/wD8booA1qKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDjvGOr+LNO1XSY/DukC9t5HP2kkdf9kn+AYydx74+h7GiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKoWhYWsZMjsWUMSzEnmptzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiq25v7x/Ojc394/nQBZoqtub+8fzo3N/eP50AWaKrbm/vH86Nzf3j+dAFmiqMkZlIPmyJj0bGaKAEtv+PSH/cX+VS1Fbf8AHpD/ALi/yqWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAitv+PSH/cX+VS1Fbf8ekP+4v8AKpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBltb3EcKxyCL5QBlGPP6e1T+U/+zRHdRSoHRiVPQ7TTvOT1P5GgBvlP/s0eU/8As07zk9T+Ro85PU/kaAG+U/8As0eU/wDs07zk9T+Ro85PU/kaAG+U/wDs0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/wCzTvOT1P5Gjzk9T+RoAb5T/wCzR5T/AOzTvOT1P5Gjzk9T+RoAb5T/AOzR5T/7NO85PU/kaPOT1P5GgBvlP/s0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/ALNO85PU/kaPOT1P5GgBvlP/ALNHlP8A7NO85PU/kaPOT1P5GgBvlP8A7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/7NO85PU/kaPOT1P5GgBvlP/s0eU/8As07zk9T+Ro85PU/kaAG+U/8As0eU/wDs07zk9T+Ro85PU/kaAG+U/wDs0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/wCzTvOT1P5Gjzk9T+RoAb5T/wCzR5T/AOzTvOT1P5Gjzk9T+RoAb5T/AOzR5T/7NO85PU/kaPOT1P5GgBvlP/s0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/ALNO85PU/kaPOT1P5GgBvlP/ALNHlP8A7NO85PU/kaPOT1P5GgBvlP8A7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/7NO85PU/kaPOT1P5GgBvlP/s0eU/8As07zk9T+Ro85PU/kaAG+U/8As0eU/wDs07zk9T+Ro85PU/kaAG+U/wDs0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/wCzTvOT1P5Gjzk9T+RoAb5T/wCzR5T/AOzTvOT1P5Gjzk9T+RoAb5T/AOzR5T/7NO85PU/kaPOT1P5GgBvlP/s0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/ALNO85PU/kaPOT1P5GgBvlP/ALNHlP8A7NO85PU/kaPOT1P5GgBvlP8A7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/7NO85PU/kaPOT1P5GgBvlP/s0eU/8As07zk9T+Ro85PU/kaAG+U/8As0eU/wDs07zk9T+Ro85PU/kaAG+U/wDs0eU/+zTvOT1P5Gjzk9T+RoAb5T/7NHlP/s07zk9T+Ro85PU/kaAG+U/+zR5T/wCzTvOT1P5Gjzk9T+RoAb5T/wCzR5T/AOzTvOT1P5Gjzk9T+RoArvFdZxEIdv8AtMc/yoqWS8giIDsRn/ZNFAFe14tIcf3F/lUv5VFbf8ekP+4v8qloAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAPyo/KiigA/Kj8qKKAD8qPyoooAMA9RmiiigCK2/49If8AcX+VS1Fbf8ekP+4v8qloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIrb/j0h/3F/lUtRW3/AB6Q/wC4v8qloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAILN1e0i2nOFA/IVPRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBFNcxQECRsE80UUUAf/9k=" id="p3img1"></DIV>
+
+
+<DIV class="dclr"></DIV>
+<DIV id="id3_1">
+<P class="p32 ft12">##</P>
+<P class="p33 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Attaching package: 'randomForest'</SPAN></P>
+<P class="p34 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">The following object is masked from 'package:ggplot2':</SPAN></P>
+<P class="p35 ft12">##</P>
+<P class="p36 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft30">margin</SPAN></P>
+<P class="p11 ft20">suppressPackageStartupMessages<SPAN class="ft18">(</SPAN>model1 <SPAN class="ft18">&lt;- </SPAN>train<SPAN class="ft18">(</SPAN>y<SPAN class="ft18">=</SPAN>my_train<SPAN class="ft18">[</SPAN><SPAN class="ft21">,</SPAN><SPAN class="ft19">53</SPAN><SPAN class="ft18">]</SPAN><SPAN class="ft21">, </SPAN><NOBR>x<SPAN class="ft18">=</SPAN>my_train<SPAN class="ft18">[</SPAN><SPAN class="ft21">,</SPAN><SPAN class="ft18">-</SPAN><SPAN class="ft19">53</SPAN><SPAN class="ft18">] </SPAN><SPAN class="ft21">,</SPAN></NOBR><SPAN class="ft21"> </SPAN>method<SPAN class="ft18">=</SPAN><SPAN class="ft31">"rf"</SPAN><SPAN class="ft21">,</SPAN>trControl <SPAN class="ft18">=</SPAN></P>
+<P class="p37 ft33">tcontrol<SPAN class="ft32">)) </SPAN>rf <SPAN class="ft32">&lt;- </SPAN>model1</P>
+<P class="p38 ft37"><SPAN class="ft34">#</SPAN><SPAN class="ft35">validation set is used to generate confusion matrix </SPAN><SPAN class="ft28">pred </SPAN><SPAN class="ft27">&lt;- </SPAN><SPAN class="ft28">predict</SPAN><SPAN class="ft27">(</SPAN><SPAN class="ft28">model1</SPAN><SPAN class="ft36">, </SPAN><SPAN class="ft28">my_test </SPAN><SPAN class="ft36">, </SPAN><SPAN class="ft28">data</SPAN><SPAN class="ft27">=</SPAN><SPAN class="ft28">my_test</SPAN><SPAN class="ft27">) </SPAN><SPAN class="ft28">confusionMatrix</SPAN><SPAN class="ft27">(</SPAN><SPAN class="ft28">pred</SPAN><SPAN class="ft36">, </SPAN><SPAN class="ft28">my_test</SPAN><SPAN class="ft27">$</SPAN><SPAN class="ft28">classe</SPAN><SPAN class="ft27">)</SPAN></P>
+<P class="p39 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Confusion Matrix and Statistics</SPAN></P>
+<P class="p35 ft12">##</P>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft38">Reference</SPAN></P>
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD colspan=2 class="tr0 td0"><P class="p41 ft39">## Prediction</P></TD>
+	<TD class="tr0 td1"><P class="p42 ft39">A</P></TD>
+	<TD class="tr0 td2"><P class="p43 ft39">B</P></TD>
+	<TD class="tr0 td2"><P class="p44 ft39">C</P></TD>
+	<TD class="tr0 td3"><P class="p45 ft39">D</P></TD>
+	<TD class="tr0 td4"><P class="p46 ft39">E</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td5"><P class="p41 ft39">##</P></TD>
+	<TD colspan=2 class="tr1 td6"><P class="p47 ft39">A 1393</P></TD>
+	<TD class="tr1 td2"><P class="p43 ft39">4</P></TD>
+	<TD class="tr1 td2"><P class="p44 ft39">0</P></TD>
+	<TD class="tr1 td3"><P class="p45 ft39">0</P></TD>
+	<TD class="tr1 td4"><P class="p46 ft39">0</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr2 td7"><P class="p47 ft40">B</P></TD>
+	<TD class="tr2 td1"><P class="p42 ft40">2</P></TD>
+	<TD class="tr2 td2"><P class="p43 ft40">945</P></TD>
+	<TD class="tr2 td2"><P class="p44 ft40">15</P></TD>
+	<TD class="tr2 td3"><P class="p45 ft40">0</P></TD>
+	<TD class="tr2 td4"><P class="p46 ft40">0</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr1 td7"><P class="p47 ft40">C</P></TD>
+	<TD class="tr1 td1"><P class="p42 ft40">0</P></TD>
+	<TD class="tr1 td2"><P class="p43 ft40">0</P></TD>
+	<TD class="tr1 td2"><P class="p44 ft40">839</P></TD>
+	<TD class="tr1 td3"><P class="p45 ft40">13</P></TD>
+	<TD class="tr1 td4"><P class="p46 ft40">0</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr2 td7"><P class="p47 ft40">D</P></TD>
+	<TD class="tr2 td1"><P class="p42 ft40">0</P></TD>
+	<TD class="tr2 td2"><P class="p43 ft40">0</P></TD>
+	<TD class="tr2 td2"><P class="p44 ft40">1</P></TD>
+	<TD class="tr2 td3"><P class="p45 ft40">791</P></TD>
+	<TD class="tr2 td4"><P class="p46 ft40">0</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr1 td7"><P class="p47 ft40">E</P></TD>
+	<TD class="tr1 td1"><P class="p42 ft40">0</P></TD>
+	<TD class="tr1 td2"><P class="p43 ft40">0</P></TD>
+	<TD class="tr1 td2"><P class="p44 ft40">0</P></TD>
+	<TD class="tr1 td3"><P class="p45 ft40">0</P></TD>
+	<TD class="tr1 td4"><P class="p46 ft40">901</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr3 td7"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td1"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td2"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td2"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td3"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td4"><P class="p41 ft41">&nbsp;</P></TD>
+</TR>
+</TABLE>
+<P class="p36 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Overall Statistics</SPAN></P>
+<P class="p48 ft12">##</P>
+<P class="p49 ft12"><SPAN class="ft21">##</SPAN><SPAN class="ft42">Accuracy : 0.9929</SPAN></P>
+<TABLE cellpadding=0 cellspacing=0 class="t1">
+<TR>
+	<TD class="tr0 td8"><P class="p50 ft21">##</P></TD>
+	<TD class="tr0 td9"><P class="p51 ft10">95% CI : (0.9901, 0.995)</P></TD>
+</TR>
+</TABLE>
+<P class="p36 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft30">No Information Rate : 0.2845</SPAN></P>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><NOBR><SPAN class="ft30">P-Value</SPAN></NOBR> [Acc &gt; NIR] : &lt; <NOBR>2.2e-16</NOBR></P>
+<P class="p48 ft12">##</P>
+<TABLE cellpadding=0 cellspacing=0 class="t2">
+<TR>
+	<TD class="tr0 td10"><P class="p52 ft10">##</P></TD>
+	<TD class="tr0 td11"><P class="p53 ft10">Kappa : 0.991</P></TD>
+</TR>
+</TABLE>
+<P class="p33 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft43">Mcnemar's Test </SPAN><NOBR>P-Value :</NOBR> NA</P>
+<P class="p0 ft12">##</P>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Statistics by Class:</SPAN></P>
+<TABLE cellpadding=0 cellspacing=0 class="t3">
+<TR>
+	<TD class="tr0 td12"><P class="p41 ft39">##</P></TD>
+	<TD class="tr0 td13"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td14"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td15"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td14"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td7"><P class="p41 ft41">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft39">##</P></TD>
+	<TD colspan=5 class="tr1 td16"><P class="p54 ft10">Class: A Class: B Class: C Class: D Class: E</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td12"><P class="p41 ft40">## Sensitivity</P></TD>
+	<TD class="tr2 td13"><P class="p46 ft40">0.9986</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9958</P></TD>
+	<TD class="tr2 td15"><P class="p46 ft40">0.9813</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9838</P></TD>
+	<TD class="tr2 td7"><P class="p46 ft40">1.0000</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft40">## Specificity</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft40">0.9989</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.9957</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft40">0.9968</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.9998</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft40">1.0000</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td12"><P class="p41 ft40">## Pos Pred Value</P></TD>
+	<TD class="tr2 td13"><P class="p46 ft40">0.9971</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9823</P></TD>
+	<TD class="tr2 td15"><P class="p46 ft40">0.9847</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9987</P></TD>
+	<TD class="tr2 td7"><P class="p46 ft40">1.0000</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft40">## Neg Pred Value</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft40">0.9994</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.9990</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft40">0.9961</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.9968</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft40">1.0000</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft39">## Prevalence</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft39">0.2845</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft39">0.1935</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft39">0.1743</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft39">0.1639</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft39">0.1837</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td12"><P class="p41 ft40">## Detection Rate</P></TD>
+	<TD class="tr2 td13"><P class="p46 ft40">0.2841</P></TD>
+	<TD class="tr2 td14"><P class="p54 ft40">0.1927</P></TD>
+	<TD class="tr2 td15"><P class="p46 ft40">0.1711</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.1613</P></TD>
+	<TD class="tr2 td7"><P class="p46 ft40">0.1837</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft10">## Detection Prevalence</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft40">0.2849</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.1962</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft40">0.1737</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.1615</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft40">0.1837</P></TD>
+</TR>
+<TR>
+	<TD class="tr4 td12"><P class="p41 ft12">## Balanced Accuracy</P></TD>
+	<TD class="tr4 td13"><P class="p46 ft12">0.9987</P></TD>
+	<TD class="tr4 td14"><P class="p46 ft12">0.9957</P></TD>
+	<TD class="tr4 td15"><P class="p46 ft12">0.9890</P></TD>
+	<TD class="tr4 td14"><P class="p46 ft12">0.9918</P></TD>
+	<TD class="tr4 td7"><P class="p46 ft12">1.0000</P></TD>
+</TR>
+</TABLE>
+<P class="p55 ft3">performance of random forest</P>
+<P class="p56 ft5">Validation set resulted in Accuracy of .9931 and kappa value of 0.9912</P>
+<P class="p57 ft17">boosted tree</P>
+<P class="p58 ft8">garbage <SPAN class="ft7">&lt;- </SPAN>capture.output<SPAN class="ft7">(</SPAN>gbm <SPAN class="ft7">&lt;- </SPAN>train<SPAN class="ft7">(</SPAN>y<SPAN class="ft7">=</SPAN>my_train<SPAN class="ft7">[</SPAN><SPAN class="ft12">,</SPAN><SPAN class="ft22">53</SPAN><SPAN class="ft7">]</SPAN><SPAN class="ft12">, </SPAN><NOBR>x<SPAN class="ft7">=</SPAN>my_train<SPAN class="ft7">[</SPAN><SPAN class="ft12">,</SPAN><SPAN class="ft7">-</SPAN><SPAN class="ft22">53</SPAN><SPAN class="ft7">] </SPAN><SPAN class="ft12">,</SPAN></NOBR><SPAN class="ft12"> </SPAN>method<SPAN class="ft7">=</SPAN><SPAN class="ft24">"gbm"</SPAN><SPAN class="ft12">,</SPAN>trControl <SPAN class="ft7">=</SPAN></P>
+<P class="p59 ft8">tcontro l<SPAN class="ft7">))</SPAN></P>
+<P class="p60 ft37"><SPAN class="ft34">#</SPAN><SPAN class="ft35">validation set is used to generate confusion matrix </SPAN><SPAN class="ft28">gbm.pred </SPAN><SPAN class="ft27">&lt;- </SPAN><SPAN class="ft28">predict</SPAN><SPAN class="ft27">(</SPAN><SPAN class="ft28">gbm</SPAN><SPAN class="ft36">, </SPAN><SPAN class="ft28">my_test</SPAN><SPAN class="ft27">) </SPAN><SPAN class="ft28">confusionMatrix</SPAN><SPAN class="ft27">(</SPAN><SPAN class="ft28">gbm.pred </SPAN><SPAN class="ft36">, </SPAN><SPAN class="ft28">my_test</SPAN><SPAN class="ft27">$</SPAN><SPAN class="ft28">classe</SPAN><SPAN class="ft27">)</SPAN></P>
+</DIV>
+<DIV id="id3_2">
+</DIV>
+</DIV>
+<DIV id="page_4">
+<DIV id="p4dimg1">
+<IMG src="data:image/jpg;base64,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gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaobP/AI8oP+ua/wAqmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIbP/AI8oP+ua/wAqmqGz/wCPKD/rmv8AKpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCGz/wCPKD/rmv8AKpqhs/8Ajyg/65r/ACqagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAhs/8Ajyg/65r/ACqaqdrOqWkKtHMpVApBibtx2FS/a4/7s3/fl/8ACgCeioPtcf8Adm/78v8A4Ufa4/7s3/fl/wDCgCeioPtcf92b/vy/+FH2uP8Auzf9+X/woAnoqD7XH/dm/wC/L/4Ufa4/7s3/AH5f/CgCeioPtcf92b/vy/8AhR9rj/uzf9+X/wAKAJ6Kg+1x/wB2b/vy/wDhR9rj/uzf9+X/AMKAJ6Kg+1x/3Zv+/L/4Ufa4/wC7N/35f/CgCeioPtcf92b/AL8v/hR9rj/uzf8Afl/8KAJ6Kg+1x/3Zv+/L/wCFH2uP+7N/35f/AAoAnoqD7XH/AHZv+/L/AOFH2uP+7N/35f8AwoAnoqD7XH/dm/78v/hR9rj/ALs3/fl/8KAJ6Kg+1x/3Zv8Avy/+FH2uP+7N/wB+X/woAnoqD7XH/dm/78v/AIUfa4/7s3/fl/8ACgCeioPtcf8Adm/78v8A4Ufa4/7s3/fl/wDCgCeioPtcf92b/vy/+FH2uP8Auzf9+X/woAnoqD7XH/dm/wC/L/4Ufa4/7s3/AH5f/CgCeioPtcf92b/vy/8AhR9rj/uzf9+X/wAKAJ6Kg+1x/wB2b/vy/wDhR9rj/uzf9+X/AMKAJ6Kg+1x/3Zv+/L/4Ufa4/wC7N/35f/CgCeioPtcf92b/AL8v/hR9rj/uzf8Afl/8KAJ6Kg+1x/3Zv+/L/wCFH2uP+7N/35f/AAoAnoqD7XH/AHZv+/L/AOFH2uP+7N/35f8AwoAnoqD7XH/dm/78v/hR9rj/ALs3/fl/8KAJ6Kg+1x/3Zv8Avy/+FH2uP+7N/wB+X/woAnoqD7XH/dm/78v/AIUfa4/7s3/fl/8ACgCeioPtcf8Adm/78v8A4Ufa4/7s3/fl/wDCgCeioPtcf92b/vy/+FH2uP8Auzf9+X/woAnoqD7XH/dm/wC/L/4Ufa4/7s3/AH5f/CgCeioPtcf92b/vy/8AhR9rj/uzf9+X/wAKAJ6Kg+1x/wB2b/vy/wDhR9rj/uzf9+X/AMKAJ6Kg+1x/3Zv+/L/4Ufa4/wC7N/35f/CgCeioPtcf92b/AL8v/hR9rj/uzf8Afl/8KAJ6Kg+1x/3Zv+/L/wCFH2uP+7N/35f/AAoAnoqD7XH/AHZv+/L/AOFH2uP+7N/35f8AwoAnoqD7XH/dm/78v/hR9rj/ALs3/fl/8KAJ6Kg+1x/3Zv8Avy/+FH2uP+7N/wB+X/woAnoqD7XH/dm/78v/AIUfa4/7s3/fl/8ACgCeioPtcf8Adm/78v8A4Ufa4/7s3/fl/wDCgCeioPtcf92b/vy/+FH2uP8Auzf9+X/woAnoqD7XH/dm/wC/L/4Ufa4/7s3/AH5f/CgCeioPtcf92b/vy/8AhR9rj/uzf9+X/wAKAJ6Kg+1x/wB2b/vy/wDhR9rj/uzf9+X/AMKAJ6Kg+1x/3Zv+/L/4Ufa4/wC7N/35f/CgCeiqz3iLjENw+f7sTcfmKKALNFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBx/jDx2PCeq6VYnSri9+3sQWiJBX5lGEGDvbn7uR29a7CmPFHI0bOis0bbkJGSpwRkehwSPoTT6ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDjfGWh+KdV1jRptA1k2FtDIftADsMcg7io4kHy42nufQkjsqKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAKcE88kMbt5YLDOApqTzZf7yf8AfJqC2/49If8AcX+VS0AO82X+8n/fJo82X+8n/fJptFADvNl/vJ/3yaPNl/vJ/wB8mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/wB8mjzZf7yf98mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/3yaPNl/vJ/wB8mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/wB8mjzZf7yf98mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/3yaPNl/vJ/wB8mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/wB8mjzZf7yf98mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/3yaPNl/vJ/wB8mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/wB8mjzZf7yf98mm0UAO82X+8n/fJo82X+8n/fJptFADvNl/vJ/3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f/fIoAloqL7ND/zxj/75FH2aH/njH/3yKAJaKi+zQ/8APGP/AL5FH2aH/njH/wB8igCWiovs0P8Azxj/AO+RR9mh/wCeMf8A3yKAJaKi+zQ/88Y/++RR9mh/54x/98igCWiovs0P/PGP/vkUfZof+eMf/fIoAloqL7ND/wA8Y/8AvkUfZof+eMf/AHyKAJaKi+zQ/wDPGP8A75FH2aH/AJ4x/wDfIoAloqL7ND/zxj/75FH2aH/njH/3yKAJaKi+zQ/88Y/++RR9mh/54x/98igCWiovs0P/ADxj/wC+RR9mh/54x/8AfIoAloqL7ND/AM8Y/wDvkUfZof8AnjH/AN8igCWiovs0P/PGP/vkUfZof+eMf/fIoAloqL7ND/zxj/75FH2aH/njH/3yKAJaKi+zQ/8APGP/AL5FH2aH/njH/wB8igCWiovs0P8Azxj/AO+RR9mh/wCeMf8A3yKAJaKi+zQ/88Y/++RR9mh/54x/98igCWiovs0P/PGP/vkUfZof+eMf/fIoAloqL7ND/wA8Y/8AvkUfZof+eMf/AHyKAJaKi+zQ/wDPGP8A75FH2aH/AJ4x/wDfIoAloqL7ND/zxj/75FH2aH/njH/3yKAJaKi+zQ/88Y/++RR9mh/54x/98igCWiovs0P/ADxj/wC+RR9mh/54x/8AfIoAloqL7ND/AM8Y/wDvkUfZof8AnjH/AN8igCWiovs0P/PGP/vkUfZof+eMf/fIoAloqL7ND/zxj/75FH2aH/njH/3yKAJaKi+zQ/8APGP/AL5FH2aH/njH/wB8igCWiovs0P8Azxj/AO+RR9mh/wCeMf8A3yKAJc0VA1rC/wB6NTj2ooALP/jyt/8Armv8qnqCz/48rf8A65r/ACqegAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAgs/8Ajyt/+ua/yqeoLP8A487f/rmv8qnoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMzT53+ww9Pu1Z+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAB9of0X8qPtD+i/lRRQAfaH9F/Kj7Q/ov5UUUAH2h/Rfyo+0P6L+VFFAGZqOoXEUqCNgoK9AKKKKAP//Z" id="p4img1"></DIV>
+
+
+<DIV class="dclr"></DIV>
+<DIV id="id4_1">
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Confusion Matrix and Statistics</SPAN></P>
+<P class="p61 ft12">##</P>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft38">Reference</SPAN></P>
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD colspan=2 class="tr0 td17"><P class="p41 ft39">## Prediction</P></TD>
+	<TD class="tr0 td18"><P class="p43 ft39">A</P></TD>
+	<TD class="tr0 td18"><P class="p43 ft39">B</P></TD>
+	<TD class="tr0 td2"><P class="p44 ft39">C</P></TD>
+	<TD class="tr0 td3"><P class="p45 ft39">D</P></TD>
+	<TD class="tr0 td4"><P class="p46 ft39">E</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td5"><P class="p41 ft40">##</P></TD>
+	<TD colspan=2 class="tr1 td19"><P class="p47 ft40">A 1372</P></TD>
+	<TD class="tr1 td18"><P class="p43 ft40">27</P></TD>
+	<TD class="tr1 td2"><P class="p44 ft40">0</P></TD>
+	<TD class="tr1 td3"><P class="p45 ft40">0</P></TD>
+	<TD class="tr1 td4"><P class="p46 ft40">1</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr1 td20"><P class="p47 ft40">B</P></TD>
+	<TD class="tr1 td18"><P class="p43 ft40">13</P></TD>
+	<TD class="tr1 td18"><P class="p43 ft40">899</P></TD>
+	<TD class="tr1 td2"><P class="p44 ft40">33</P></TD>
+	<TD class="tr1 td3"><P class="p45 ft40">3</P></TD>
+	<TD class="tr1 td4"><P class="p46 ft40">13</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr2 td20"><P class="p47 ft40">C</P></TD>
+	<TD class="tr2 td18"><P class="p43 ft40">4</P></TD>
+	<TD class="tr2 td18"><P class="p43 ft40">19</P></TD>
+	<TD class="tr2 td2"><P class="p44 ft40">810</P></TD>
+	<TD class="tr2 td3"><P class="p45 ft40">29</P></TD>
+	<TD class="tr2 td4"><P class="p46 ft40">13</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr1 td20"><P class="p47 ft40">D</P></TD>
+	<TD class="tr1 td18"><P class="p43 ft40">4</P></TD>
+	<TD class="tr1 td18"><P class="p43 ft40">3</P></TD>
+	<TD class="tr1 td2"><P class="p44 ft40">10</P></TD>
+	<TD class="tr1 td3"><P class="p45 ft40">769</P></TD>
+	<TD class="tr1 td4"><P class="p46 ft40">4</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr2 td20"><P class="p47 ft40">E</P></TD>
+	<TD class="tr2 td18"><P class="p43 ft40">2</P></TD>
+	<TD class="tr2 td18"><P class="p43 ft40">1</P></TD>
+	<TD class="tr2 td2"><P class="p44 ft40">2</P></TD>
+	<TD class="tr2 td3"><P class="p45 ft40">3</P></TD>
+	<TD class="tr2 td4"><P class="p46 ft40">870</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td5"><P class="p41 ft40">##</P></TD>
+	<TD class="tr3 td20"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td18"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td18"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td2"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td3"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr3 td4"><P class="p41 ft41">&nbsp;</P></TD>
+</TR>
+</TABLE>
+<P class="p36 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Overall Statistics</SPAN></P>
+<P class="p48 ft12">##</P>
+<P class="p62 ft12"><SPAN class="ft21">##</SPAN><SPAN class="ft42">Accuracy : 0.9625</SPAN></P>
+<TABLE cellpadding=0 cellspacing=0 class="t4">
+<TR>
+	<TD class="tr0 td8"><P class="p50 ft21">##</P></TD>
+	<TD class="tr0 td21"><P class="p51 ft10">95% CI : (0.9568, 0.9676)</P></TD>
+</TR>
+</TABLE>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft30">No Information Rate : 0.2845</SPAN></P>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><NOBR><SPAN class="ft30">P-Value</SPAN></NOBR> [Acc &gt; NIR] : &lt; <NOBR>2.2e-16</NOBR></P>
+<P class="p0 ft12">##</P>
+<TABLE cellpadding=0 cellspacing=0 class="t5">
+<TR>
+	<TD class="tr0 td10"><P class="p52 ft10">##</P></TD>
+	<TD class="tr0 td12"><P class="p53 ft10">Kappa : 0.9525</P></TD>
+</TR>
+</TABLE>
+<P class="p63 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft43">Mcnemar's Test </SPAN><NOBR>P-Value :</NOBR> <NOBR>2.408e-06</NOBR></P>
+<P class="p48 ft12">##</P>
+<P class="p40 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Statistics by Class:</SPAN></P>
+<TABLE cellpadding=0 cellspacing=0 class="t3">
+<TR>
+	<TD class="tr0 td12"><P class="p41 ft39">##</P></TD>
+	<TD class="tr0 td13"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td14"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td15"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td14"><P class="p41 ft41">&nbsp;</P></TD>
+	<TD class="tr0 td7"><P class="p41 ft41">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft40">##</P></TD>
+	<TD colspan=5 class="tr1 td16"><P class="p54 ft10">Class: A Class: B Class: C Class: D Class: E</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td12"><P class="p41 ft40">## Sensitivity</P></TD>
+	<TD class="tr2 td13"><P class="p46 ft40">0.9835</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9473</P></TD>
+	<TD class="tr2 td15"><P class="p46 ft40">0.9474</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9565</P></TD>
+	<TD class="tr2 td7"><P class="p46 ft40">0.9656</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft40">## Specificity</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft40">0.9920</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.9843</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft40">0.9839</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.9949</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft40">0.9980</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft39">## Pos Pred Value</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft39">0.9800</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft39">0.9355</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft39">0.9257</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft39">0.9734</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft39">0.9909</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td12"><P class="p41 ft40">## Neg Pred Value</P></TD>
+	<TD class="tr2 td13"><P class="p46 ft40">0.9934</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9873</P></TD>
+	<TD class="tr2 td15"><P class="p46 ft40">0.9888</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.9915</P></TD>
+	<TD class="tr2 td7"><P class="p46 ft40">0.9923</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft40">## Prevalence</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft40">0.2845</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.1935</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft40">0.1743</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.1639</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft40">0.1837</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td12"><P class="p41 ft40">## Detection Rate</P></TD>
+	<TD class="tr2 td13"><P class="p46 ft40">0.2798</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.1833</P></TD>
+	<TD class="tr2 td15"><P class="p46 ft40">0.1652</P></TD>
+	<TD class="tr2 td14"><P class="p46 ft40">0.1568</P></TD>
+	<TD class="tr2 td7"><P class="p46 ft40">0.1774</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td12"><P class="p41 ft10">## Detection Prevalence</P></TD>
+	<TD class="tr1 td13"><P class="p46 ft40">0.2855</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.1960</P></TD>
+	<TD class="tr1 td15"><P class="p46 ft40">0.1784</P></TD>
+	<TD class="tr1 td14"><P class="p46 ft40">0.1611</P></TD>
+	<TD class="tr1 td7"><P class="p46 ft40">0.1790</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td12"><P class="p41 ft12">## Balanced Accuracy</P></TD>
+	<TD class="tr5 td13"><P class="p46 ft12">0.9878</P></TD>
+	<TD class="tr5 td14"><P class="p46 ft12">0.9658</P></TD>
+	<TD class="tr5 td15"><P class="p46 ft12">0.9657</P></TD>
+	<TD class="tr5 td14"><P class="p46 ft12">0.9757</P></TD>
+	<TD class="tr5 td7"><P class="p46 ft12">0.9818</P></TD>
+</TR>
+</TABLE>
+<P class="p64 ft3">performance of boosted tree</P>
+<P class="p56 ft5">Applying Validation data set resulted in accuracy value of 0.9659 and kappa value of .9659</P>
+<P class="p65 ft17">Predicting using test data</P>
+<P class="p66 ft5">Random forest model is performing better in than boosted tree. so random forest is used to predict the outcome of test data</P>
+<P class="p67 ft8">pred.test <SPAN class="ft7">&lt;- </SPAN>predict<SPAN class="ft7">(</SPAN>rf<SPAN class="ft12">, </SPAN>testing<SPAN class="ft7">) </SPAN>pred.test</P>
+<P class="p68 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft43">[1]BABAAEDBAABCBAEEABBB</SPAN></P>
+<P class="p33 ft12"><SPAN class="ft10">##</SPAN><SPAN class="ft11">Levels: A B C D E</SPAN></P>
+</DIV>
+<DIV id="id4_2">
+</DIV>
+</DIV>
+</BODY>
+</HTML>
